@@ -1,0 +1,11 @@
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 50px;
+    font-size: 36px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 6px;
+}
