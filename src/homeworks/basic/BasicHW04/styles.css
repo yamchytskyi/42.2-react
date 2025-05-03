@@ -1,0 +1,66 @@
+.basicHW04-wrapper {
+    display: flex;
+  }
+main {
+    display: flex;
+    margin-top: 100px;
+    min-height: calc(100vh - 100px);
+}
+
+.cards-container {
+    width: 70vw;
+    flex-grow: 1;
+}
+
+aside {
+    width: 30vw;
+    background-color: crimson;
+    height: 60%;
+    align-self: stretch;
+}
+.cards-container > :nth-child(1) {
+}
+.cards-container > :nth-child(2) {
+margin-left: 400px;
+}
+.cards-container > :nth-child(3) {
+margin-left: 800px;
+}
+.cards-container > :nth-child(4) {
+margin-left: 1200px;
+}
+.cards-container > :nth-child(5) {
+margin-left: 1600px;
+}
+
+.relative-parent {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: 500px;
+background-color: yellow;
+}
+
+.absolute-child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    background-color: blue;
+    color: yellow;
+}
+
+.static-square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(248, 58, 0);
+}
+
+.sticky {
+    position: sticky;
+    width: 100%;
+    height: 200px;
+    top: 10px;
+    background-color: green;
+}
