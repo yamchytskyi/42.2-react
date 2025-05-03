@@ -1,0 +1,96 @@
+2. Fixed Header (position: fixed)
+
+    Create a Header component that stays at the top of the page when scrolling.
+
+    Ensure no content hides behind it (adjust body padding).
+
+3. Client Cards (position: relative)
+
+    Create a ClientCard component with:
+
+        Dimensions: 400px × 500px.
+
+        Styling: Unique border style for each card (solid, dashed, dotted).
+
+        Content: Name, photo (placeholder), age, gender.
+
+    Position cards in a staircase layout (each card offset diagonally).
+
+4. Positioning Subtasks
+
+Add these to the page to demonstrate all positioning types:
+A. Static Square (Default)
+
+    A div with no explicit positioning (ignores top/right/bottom/left).
+
+B. Relative + Absolute Squares
+
+    A relative parent div (300px × 300px) containing an absolute child div (100px × 100px) positioned at bottom: 10px; right: 20px.
+
+C. Sticky Sidebar
+
+    A tall aside that becomes sticky after scrolling past the header.
+
+    Inside, include:
+
+        A static square (default flow).
+
+        An absolute square positioned at top: 0; right: 0 (relative to the sidebar).
+
+D. Fixed Footer
+
+    A footer fixed to the bottom of the viewport.
+
+E. Absolute Overlay
+
+    A div positioned absolutely in the corner of the page (top: 200px; right: 50px).
+
+Interviewer’s Evaluation Criteria
+
+    Correct Positioning:
+
+        Does each element behave as expected (e.g., sticky sidebar sticks, fixed header doesn’t overlap)?
+
+    React Best Practices:
+
+        Are components reusable? Is state/props used effectively for card data?
+
+    Layout Integrity:
+
+        Does the staircase card layout work? Is there unwanted overlap?
+
+    Code Structure:
+
+        Are styles scoped properly (CSS Modules/Styled Components)?
+
+    Attention to Detail:
+
+        Are offsets (e.g., body padding for fixed header/footer) handled?
+
+Bonus Questions (Interview Follow-Up)
+
+    How would you make this responsive?
+
+        Consider mobile layouts for the staircase cards.
+
+    When would you use position: sticky vs fixed?
+
+        Compare use cases (e.g., sticky navbars vs fixed footers).
+
+    How does stacking context affect z-index here?
+
+        Discuss how positioned elements layer (e.g., header/footer z-index).
+
+Deliverable
+
+A single React app with:
+
+    A fixed header.
+
+    Three relatively positioned client cards in a staircase.
+
+    All five positioning examples (static, relative, absolute, sticky, fixed).
+
+    No layout bugs or overlapping issues.
+
+Time Limit: 1 hour (interview setting) or 2 hours (take-home).
