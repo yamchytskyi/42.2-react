@@ -1,9 +1,7 @@
 import "./styles.css"
 
-function Button() {
-    const isGetButton = true;
-
-    return <button className="main-button">{isGetButton ? "Get" : "Send"}</button>
+function Button({buttonName = "Get"}) {
+    return <button className="main-button">{buttonName}</button>
 }
 
 export default Button;
